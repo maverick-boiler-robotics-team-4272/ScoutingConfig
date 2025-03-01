@@ -1,0 +1,405 @@
+{
+  "title": "QRScout",
+  "page_title": "Reefscape",
+  "delimiter": "\t",
+  "teamNumber": 4272,
+  "theme": {
+    "light": {
+      "background": "0 0% 100%",
+      "foreground": "0 0% 3.9%",
+      "card": "0 0% 100%",
+      "card_foreground": "0 0% 3.9%",
+      "popover": "0 0% 100%",
+      "popover_foreground": "0 0% 3.9%",
+      "primary": "354.44 71.3% 47.9%",
+      "primary_foreground": "0 85.7% 97.3%",
+      "secondary": "0 0% 96.1%",
+      "secondary_foreground": "0 0% 9%",
+      "muted": "0 0% 96.1%",
+      "muted_foreground": "0 0% 45.1%",
+      "accent": "0 0% 96.1%",
+      "accent_foreground": "0 0% 9%",
+      "destructive": "0 84.2% 60.2%",
+      "destructive_foreground": "0 0% 98%",
+      "border": "0 0% 89.8%",
+      "input": "0 0% 89.8%",
+      "ring": "354.44 71.3% 47.9%",
+      "chart_1": "12 76% 61%",
+      "chart_2": "173 58% 39%",
+      "chart_3": "197 37% 24%",
+      "chart_4": "43 74% 66%",
+      "chart_5": "27 87% 67%"
+    },
+    "dark": {
+      "background": "0 0% 3.9%",
+      "foreground": "0 0% 98%",
+      "card": "0 0% 3.9%",
+      "card_foreground": "0 0% 98%",
+      "popover": "0 0% 3.9%",
+      "popover_foreground": "0 0% 98%",
+      "primary": "354.44 71.3% 47.9%",
+      "primary_foreground": "0 85.7% 97.3%",
+      "secondary": "0 0% 14.9%",
+      "secondary_foreground": "0 0% 98%",
+      "muted": "0 0% 14.9%",
+      "muted_foreground": "0 0% 63.9%",
+      "accent": "0 0% 14.9%",
+      "accent_foreground": "0 0% 98%",
+      "destructive": "0 62.8% 30.6%",
+      "destructive_foreground": "0 0% 98%",
+      "border": "0 0% 14.9%",
+      "input": "0 0% 14.9%",
+      "ring": "354.44 71.3% 47.9%",
+      "chart_1": "220 70% 50%",
+      "chart_2": "160 60% 45%",
+      "chart_3": "30 80% 55%",
+      "chart_4": "280 65% 60%",
+      "chart_5": "340 75% 55%"
+    }
+  },
+  "sections": [
+    {
+      "name": "Prematch",
+      "fields": [
+        {
+          "title": "Scouter",
+          "type": "select",
+          "required": true,
+          "code": "scout",
+          "formResetBehavior": "reset",
+          "defaultValue": "",
+          "choices": {
+            "Jersey": "Jersey",
+            "Other": "Other"
+          }
+        },
+        {
+          "title": "Match Number",
+          "type": "number",
+          "required": true,
+          "code": "matchNumber",
+          "formResetBehavior": "preserve",
+          "defaultValue": 0,
+          "min": 1
+        },
+        {
+          "title": "Team",
+          "type": "select",
+          "required": true,
+          "code": "robot",
+          "formResetBehavior": "reset",
+          "defaultValue": "",
+          "choices": {
+            "45": "45-TechnoKats",
+            "71": "71-Team Hammond",
+            "234": "234-CyberBlue",
+            "292": "292-PantherTech",
+            "868": "868-TechHounds",
+            "1018": "1018-Pike RoboDevils",
+            "1501": "1501-Team THRUST",
+            "1529": "1529-CyberCards",
+            "1555": "1555-CryoFrost",
+            "1720": "1720-PhyxtGears",
+            "1741": "1741-Red Alert",
+            "1747": "1747-Harrison Boiler Robotics",
+            "2171": "2171-RoboDogs",
+            "3487": "3487-Red Pride Robotics",
+            "3494": "3494-Quadrangles",
+            "3559": "3559-ThunderCats",
+            "3940": "3940-CyberTooth",
+            "4008": "4008-Theodore Roosevelt's Disco Haricut",
+            "4272": "4272-Maverick Robotics",
+            "4485": "4485-Tribe Tech",
+            "4580": "4580-Conductors",
+            "4982": "4982-Olympus",
+            "5010": "5010-Tiger Dynasty",
+            "5188": "5188-Classified Robotics",
+            "5484": "5494-Wolfpack",
+            "6498": "6498-Castle Robotics",
+            "6956": "6956-Sham-ROCK-Botics",
+            "7198": "7198-FEARsome Gears",
+            "7454": "7545-Huskies on Hogs",
+            "8103": "8103-Knight Robotics",
+            "8116": "8116-Hatchet Robotics",
+            "8430": "8430-HatchBatch",
+            "8431": "8431-RoboKnights",
+            "8564": "8564-DiscoDucks",
+            "8742": "8742-Argylle Attack",
+            "9453": "9453-Mount Vernon Wildcats",
+            "9491": "9431-Crypto Creek",
+            "9790": "9790-Crypto Creek II",
+            "10021": "10021-Guerin Catholic Golden Gears",
+            "10332": "10332-Carrol HS Robotics",
+            "99999": "OTHER"
+          }
+        },
+        {
+          "title": "TEAM OVERRIDE",
+          "type": "number",
+          "required": false,
+          "code": "override",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0
+        }
+      ]
+    },
+    {
+      "name": "Autonomous",
+      "fields": [
+        {
+          "title": "LEAVE (A)",
+          "type": "boolean",
+          "required": false,
+          "code": "a_leave",
+          "formResetBehavior": "reset",
+          "defaultValue": false
+        },
+        {
+          "title": "Coral Station (A)",
+          "type": "select",
+          "required": false,
+          "code": "a_coralstation",
+          "formResetBehavior": "reset",
+          "defaultValue": "",
+          "choices": {
+            "0": "NO CORAL STATION",
+            "1": "NEAR SIDE",
+            "2": "FAR SIDE"
+          }
+        },
+        {
+          "title": "Coral L4 (A)",
+          "type": "counter",
+          "required": false,
+          "code": "a_coral4",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "Coral L3 (A)",
+          "type": "counter",
+          "required": false,
+          "code": "a_coral3",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "Coral L2 (A)",
+          "type": "counter",
+          "required": false,
+          "code": "a_coral2",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "Coral L1 (A)",
+          "type": "counter",
+          "required": false,
+          "code": "a_coral1",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "Algae in NET (A)",
+          "type": "counter",
+          "required": false,
+          "code": "a_algaenet",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "Algae in PROCESSOR (A)",
+          "type": "counter",
+          "required": false,
+          "code": "a_algaeproc",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "Break/Die/Tip/Other (A)",
+          "type": "boolean",
+          "required": false,
+          "code": "a_leave",
+          "formResetBehavior": "reset",
+          "defaultValue": false
+        }
+      ]
+    },
+    {
+      "name": "Teleop",
+      "fields": [
+        {
+          "title": "Coral L4 (T)",
+          "type": "counter",
+          "required": false,
+          "code": "t_coral4",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "Coral L3 (T)",
+          "type": "counter",
+          "required": false,
+          "code": "t_coral3",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "Coral L2 (T)",
+          "type": "counter",
+          "required": false,
+          "code": "t_coral2",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "Coral L1 (T)",
+          "type": "counter",
+          "required": false,
+          "code": "t_coral1",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "ROBOT Algae in NET (T)",
+          "type": "counter",
+          "required": false,
+          "code": "t_robotalgaenet",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "ROBOT Algae in PROCESSOR (T)",
+          "type": "counter",
+          "required": false,
+          "code": "a_ROBOTalgaeproc",
+          "formResetBehavior": "reset",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "Collect Algae (T)",
+          "type": "select",
+          "required": false,
+          "code": "a_algaePickup",
+          "formResetBehavior": "reset",
+          "defaultValue": " ",
+          "choices": {
+            "REEF": "From Reef",
+            "GROUND": "From Ground",
+            "NONE": "DID NOT COLLECT ALGAE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Endgame",
+      "fields": [
+        {
+          "title": "Shallow Climb",
+          "type": "select",
+          "required": false,
+          "code": "shallow",
+          "formResetBehavior": "reset",
+          "defaultValue": " ",
+          "choices": {
+            "0": "Did not Try",
+            "1": "Tried and Failed",
+            "2": "Tried and Succeeded"
+          }
+        },
+        {
+          "title": "Deep Climb",
+          "type": "select",
+          "required": false,
+          "code": "deep",
+          "formResetBehavior": "reset",
+          "defaultValue": " ",
+          "choices": {
+            "0": "Did not Try",
+            "1": "Tried and Failed",
+            "2": "Tried and Succeeded"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Post-Match",
+      "fields": [
+        {
+          "title": "Driver Rank (1 is BEST - 3 is WORST)",
+          "type": "range",
+          "required": true,
+          "code": "drive_rank",
+          "formResetBehavior": "reset",
+          "defaultValue": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1
+        },
+        {
+          "title": "DEFENSE",
+          "type": "boolean",
+          "required": true,
+          "code": "d_fense",
+          "formResetBehavior": "reset",
+          "defaultValue": false
+        },
+        {
+          "title": "Foul Cards",
+          "type": "select",
+          "required": false,
+          "code": "foul_card",
+          "formResetBehavior": "reset",
+          "defaultValue": "",
+          "choices": {
+            "0": "NO cards issued",
+            "1": "Yellow Card",
+            "2": "Red Card"
+          }
+        },
+        {
+          "title": "Special Circumstances",
+          "type": "select",
+          "required": true,
+          "code": "special",
+          "formResetBehavior": "reset",
+          "defaultValue": "",
+          "choices": {
+            "RIP": "Died",
+            "TIP": "Tipped",
+            "OW": "Significant damage",
+            "NOSHOW": "No Show",
+            "OMG": "Other (Tell Captain)",
+            "GAME Piece": "Game Piece stuck in robot",
+            "NONE": "none"
+          }
+        }
+      ]
+    }
+  ]
+}
